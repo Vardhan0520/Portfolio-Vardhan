@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+body{
+    background-color:#0B1026;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:#6C63FF;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    /* background-color: #111B44; */
+    position: relative;
+}
+nav h1{
+    margin-top: 15px ;
+    margin-left: 80px;
+    font-size: 40px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+nav img{
+    width: 80px;
+    position: absolute;
+    margin-top: 13px;
+    }
+.left-home{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* justify-content: space-around; */
+
+}
+.left-home img{
+    width: 80px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 26px;
+    
+}
+nav ul a{
+    text-decoration: none;
+     color: white;
+    transition: color 0.3s ease, transform 0.3s ease
+}
+nav ul a:hover{
+    transform: translateY(-3px);
+    color: rgb(200, 200, 255);
+}
+.first-section{
+    display: flex;
+    justify-content:center;
+    margin: 24px 0;
+}
+.first-section div{
+    width: 20%;
+    /* justify-content: center; */
+}
+.left-section img{
+    width: 100%;
+}
+.right-section{
+    font-size: 50px;
+    margin: 50px;
+}
+.right-section span{
+    color: rgb(213, 214, 220);
+}
+.right-section > div{
+    width: 300px;
+}
+span{
+    color: rgb(172, 172, 251);
+}
+.left-section-left{
+    font-size: 50px;
+    margin: 50px;
+}
+hr{
+    margin: 30px;
+}
+.second-section{
+    margin: auto;
+    max-width: 18vw;    
+}
+.second-section .project{
+    margin: 1000px;
+}
+footer {
+    background-color: rgb(80, 71, 249);
+    padding: 30px 0;
+    color: white;
+}
+
+/* Contact heading */
+footer .contact-details h4 {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+/* Social links container */
+footer .footer-first ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Links */
+footer .footer-first ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .footer-first ul a:hover{
+    color: rgb(200, 200, 255);
+    transform: translateY(-3px);
+}
+
+/* Copyright text */
+footer .rigths {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: rgb(220, 220, 220);
+}
+
+.splide__pagination {
+  counter-reset: pagination-num;
+}
+
+.splide__pagination__page:before {
+  counter-increment: pagination-num;
+  content: counter( pagination-num );
+}
